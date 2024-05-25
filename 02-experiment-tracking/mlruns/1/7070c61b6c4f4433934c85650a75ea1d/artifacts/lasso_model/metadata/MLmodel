@@ -1,0 +1,12 @@
+artifact_path: lasso_model
+flavors:
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.3.0
+mlflow_version: 2.13.0
+model_size_bytes: 20
+model_uuid: 02b7ad83fab9461cb4cfc5e57e3fb0dd
+run_id: 7070c61b6c4f4433934c85650a75ea1d
+utc_time_created: '2024-05-24 13:25:23.463514'
