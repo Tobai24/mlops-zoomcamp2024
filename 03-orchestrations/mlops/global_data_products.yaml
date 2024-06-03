@@ -1,0 +1,54 @@
+global:
+  object_type: pipeline
+  object_uuid: data_ingest
+  outdated_after:
+    seconds: 120
+  outdated_starting_at:
+    minute_of_hour: 0
+  repo_path: /workspaces/mlops-zoomcamp2024/03-orchestration/mlops
+  settings:
+    build: {}
+global_data:
+  object_type: pipeline
+  object_uuid: data_ingest
+  outdated_after:
+    seconds: 118
+  outdated_starting_at:
+    minute_of_hour: 0
+  repo_path: /workspaces/mlops-zoomcamp2024/03-orchestration/mlops
+  settings:
+    build: {}
+global_data2:
+  object_type: pipeline
+  object_uuid: data_ingest
+  outdated_after:
+    seconds: 119
+  outdated_starting_at:
+    minute_of_hour: 0
+  repo_path: /workspaces/mlops-zoomcamp2024/03-orchestration/mlops
+  settings:
+    build: {}
+global_data3:
+  object_type: pipeline
+  object_uuid: data_ingest
+  repo_path: /workspaces/mlops-zoomcamp2024/03-orchestration/mlops
+global_data4:
+  object_type: pipeline
+  object_uuid: data_ingest
+  outdated_after:
+    seconds: 120
+  outdated_starting_at:
+    minute_of_hour: 0
+  repo_path: /workspaces/mlops-zoomcamp2024/03-orchestration/mlops
+  settings:
+    build: {}
+global_data_example:
+  object_type: pipeline
+  object_uuid: data_ingest
+  outdated_after:
+    seconds: 120
+  outdated_starting_at:
+    minute_of_hour: 0
+  repo_path: /workspaces/mlops-zoomcamp2024/03-orchestration/mlops
+  settings:
+    build: {}
