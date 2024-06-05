@@ -1,0 +1,105 @@
+blocks:
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    file_source:
+      path: homework_03/global_data_products/spellbinding_fog.py
+    global_data_product:
+      uuid: glob
+  downstream_blocks:
+  - winter_wildflower
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: spellbinding fog
+  retry_config: null
+  status: executed
+  timeout: null
+  type: global_data_product
+  upstream_blocks: []
+  uuid: spellbinding_fog
+- all_upstream_blocks_executed: true
+  color: teal
+  configuration:
+    dynamic: true
+    file_source:
+      path: homework_03/custom/lucid_arcanist.py
+  downstream_blocks:
+  - winter_wildflower
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: lucid arcanist
+  retry_config: null
+  status: executed
+  timeout: null
+  type: custom
+  upstream_blocks: []
+  uuid: lucid_arcanist
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    file_source:
+      path: homework_03/transformers/winter_wildflower.py
+  downstream_blocks:
+  - spellbinding_ronin
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: winter wildflower
+  retry_config: null
+  status: executed
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - spellbinding_fog
+  - lucid_arcanist
+  uuid: winter_wildflower
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    file_source:
+      path: homework_03/data_exporters/spellbinding_ronin.py
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: spellbinding ronin
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - winter_wildflower
+  uuid: spellbinding_ronin
+cache_block_output_in_memory: false
+callbacks: []
+concurrency_config: {}
+conditionals: []
+created_at: '2024-06-05 22:01:23.233536+00:00'
+data_integration: null
+description: null
+executor_config: {}
+executor_count: 1
+executor_type: null
+extensions: {}
+name: sklearn
+notification_config: {}
+remote_variables_dir: null
+retry_config: {}
+run_pipeline_in_one_process: false
+settings:
+  triggers: null
+spark_config: {}
+tags: []
+type: python
+uuid: sklearn
+variables:
+  max_evaluations: 50
+  random_state: 7
+variables_dir: /home/src/mage_data/homework_03
+widgets: []

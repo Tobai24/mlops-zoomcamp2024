@@ -1,7 +1,0 @@
-prac:
-  object_uuid: example_pipeline
-  outdated_after:
-    seconds: 120
-  outdated_starting_at:
-    second_of_minute: 0
-  repo_path: /workspaces/mlops-zoomcamp2024/03-orchestrations/homework_03

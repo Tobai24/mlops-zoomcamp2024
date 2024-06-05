@@ -1,0 +1,33 @@
+glob:
+  object_type: pipeline
+  object_uuid: data_ingest
+  outdated_after:
+    seconds: 120
+  outdated_starting_at:
+    minute_of_hour: 0
+  project: homework_03
+  repo_path: /home/src/mlops/homework_03
+  settings:
+    build: {}
+new:
+  object_type: pipeline
+  object_uuid: data_ingest
+  outdated_after:
+    seconds: 118
+  outdated_starting_at:
+    minute_of_hour: 0
+  project: homework_03
+  repo_path: /home/src/mlops/homework_03
+  settings:
+    build: {}
+new_blog_:
+  object_type: pipeline
+  object_uuid: data_ingest
+  outdated_after:
+    seconds: 118
+  outdated_starting_at:
+    minute_of_hour: 0
+  project: homework_03
+  repo_path: /home/src/mlops/homework_03
+  settings:
+    build: {}
