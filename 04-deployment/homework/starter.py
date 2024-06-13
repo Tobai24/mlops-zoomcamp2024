@@ -32,7 +32,7 @@ X_val = dv.transform(dicts)
 y_pred = model.predict(X_val)
 
 
-print(y_pred.mean())
+print(f"The mean of the prediction duration for April: {round(y_pred.mean(), 3)}")
 
 
 

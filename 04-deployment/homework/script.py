@@ -28,5 +28,5 @@ dicts = df[categorical].to_dict(orient='records')
 X_val = dv.transform(dicts)
 y_pred = model.predict(X_val)
     
-print(f"Mean of predictions: {round(y_pred.mean(), 3)}")
+print(f"Mean of predictions for May: {round(y_pred.mean(), 3)}")
  
