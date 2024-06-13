@@ -1,33 +1,12 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[2]:
-
-
-get_ipython().system('pip freeze | grep scikit-learn')
-
-
-# In[3]:
-
-
-get_ipython().system('python -V')
-
-
-# In[4]:
 
 
 import pickle
 import pandas as pd
 
 
-# In[5]:
-
 
 with open('model.bin', 'rb') as f_in:
     dv, model = pickle.load(f_in)
-
-
-# In[6]:
 
 
 categorical = ['PULocationID', 'DOLocationID']
@@ -44,14 +23,8 @@ def read_data(filename):
     
     return df
 
+df = read_data('https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2023-04.parquet')
 
-# In[7]:
-
-
-df = read_data('https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2023-03.parquet')
-
-
-# In[8]:
 
 
 dicts = df[categorical].to_dict(orient='records')
@@ -59,43 +32,13 @@ X_val = dv.transform(dicts)
 y_pred = model.predict(X_val)
 
 
-# In[9]:
+print(y_pred.mean())
 
 
-y_pred.std()
 
 
-# In[10]:
 
 
-df['ride_id'] = f'{2023:04d}/{3:02d}_' + df.index.astype('str')
-
-
-# In[12]:
-
-
-df['y_pred'] = y_pred
-df_results = df[["ride_id", "y_pred"]]
-
-
-# In[18]:
-
-
-output_file = "output_file.parquet"
-
-
-# In[20]:
-
-
-df_results.to_parquet(
-    output_file,
-    engine='pyarrow',
-    compression=None,
-    index=False
-)
-
-
-# In[ ]:
 
 
 
