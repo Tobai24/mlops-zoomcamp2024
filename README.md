@@ -1,8 +1,13 @@
 # mlops-zoomcamp2024
+<div align="center">
+  <img src="https://github.com/DataTalksClub/mlops-zoomcamp/blob/main/images/IMG_20230323_134059_927.png" alt="MLOps Zoomcamp Banner" width="100%">
+</div>
+
+
 
 This is a repository to keep track of my progress during the MLOps Zoomcamp course.
 
-# Syllabus
+## Syllabus
 
 ## Week 1(01-intro): Introduction
 - What is MLOps
