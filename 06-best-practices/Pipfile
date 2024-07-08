@@ -7,7 +7,7 @@ name = "pypi"
 boto3 = "*"
 mlflow = "*"
 scikit-learn = "==1.0.2"
-requests = "*"
+pylint = "*"
 
 [dev-packages]
 pytest = "*"
@@ -18,4 +18,4 @@ isort = "*"
 pre-commit = "*"
 
 [requires]
-python_version = "3.12"
+python_version = "3.9"
